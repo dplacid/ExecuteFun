@@ -11,7 +11,7 @@ public class triangleSpawn : MonoBehaviour {
         //coroutine = waitToSpawn();
         //StartCoroutine(coroutine);
         //cones[0].SetActive(true);
-        cones[0].gameObject.GetComponent<Color> = Color.red; 
+        cones[0].gameObject.GetComponent<Renderer>().material.SetColor("_Color",Color.red);
 	}
 	
 	// Update is called once per frame
