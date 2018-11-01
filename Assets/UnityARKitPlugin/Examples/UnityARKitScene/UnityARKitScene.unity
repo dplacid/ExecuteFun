@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1452,6 +1452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1498281990779078, guid: aff5c6a7d9b4d4ed3bd7d72539f590dc, type: 2}
   fireButton: {fileID: 149133087}
+  mat: {fileID: 2100000, guid: 5035d8fa993cd4bd8aa038e2780c6633, type: 2}
 --- !u!1 &1563586579
 GameObject:
   m_ObjectHideFlags: 0
