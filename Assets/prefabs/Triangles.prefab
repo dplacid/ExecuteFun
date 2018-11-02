@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 114930952401758750}
   m_Layer: 0
   m_Name: cone (2)
-  m_TagString: Untagged
+  m_TagString: Cone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 114563794137172862}
   m_Layer: 0
   m_Name: cone (3)
-  m_TagString: Untagged
+  m_TagString: Cone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 114728763990334844}
   m_Layer: 0
   m_Name: cone (1)
-  m_TagString: Untagged
+  m_TagString: Cone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,9 +146,10 @@ GameObject:
   - component: {fileID: 33445777357587686}
   - component: {fileID: 23734507192144674}
   - component: {fileID: 114365262943065592}
+  - component: {fileID: 64130671200242016}
   m_Layer: 0
   m_Name: cone
-  m_TagString: Untagged
+  m_TagString: Cone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -632,6 +633,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1498365211667110}
   m_Mesh: {fileID: 4300000, guid: 1dd8df1d57bcc40a88fdf51da3909f88, type: 3}
+--- !u!64 &64130671200242016
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1642500431282228}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 1dd8df1d57bcc40a88fdf51da3909f88, type: 3}
 --- !u!114 &114033650246130804
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -643,7 +658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6197057ac7aec4388b2c5ec752caa377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cones: []
+  destroyTime: 10
+  rotateSpeed: 100
 --- !u!114 &114085215455682226
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -655,7 +671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6197057ac7aec4388b2c5ec752caa377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cones: []
+  destroyTime: 10
+  rotateSpeed: 100
 --- !u!114 &114322700741197984
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -667,7 +684,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6197057ac7aec4388b2c5ec752caa377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cones: []
+  destroyTime: 10
+  rotateSpeed: 100
 --- !u!114 &114361266770894428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -679,9 +697,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6197057ac7aec4388b2c5ec752caa377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cones:
-  - {fileID: 1642500431282228}
-  - {fileID: 1498365211667110}
+  destroyTime: 10
+  rotateSpeed: 100
 --- !u!114 &114365262943065592
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -693,7 +710,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6197057ac7aec4388b2c5ec752caa377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cones: []
+  destroyTime: 10
+  rotateSpeed: 100
 --- !u!114 &114511307481820638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -705,7 +723,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6197057ac7aec4388b2c5ec752caa377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cones: []
+  destroyTime: 10
+  rotateSpeed: 100
 --- !u!114 &114563794137172862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -717,7 +736,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6197057ac7aec4388b2c5ec752caa377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cones: []
+  destroyTime: 10
+  rotateSpeed: 100
 --- !u!114 &114728763990334844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -729,7 +749,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6197057ac7aec4388b2c5ec752caa377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cones: []
+  destroyTime: 10
+  rotateSpeed: 100
 --- !u!114 &114930952401758750
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -741,4 +762,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6197057ac7aec4388b2c5ec752caa377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cones: []
+  destroyTime: 10
+  rotateSpeed: 100
