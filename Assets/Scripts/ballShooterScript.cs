@@ -46,5 +46,5 @@ public class ballShooterScript : MonoBehaviour {
         shot.AddForce(ball.transform.forward * 1000f);
         color = Random.Range(0, 4);
         fireButton.gameObject.GetComponent<UnityEngine.UI.Image>().color = colors[color];
-    }
+    } 
 }

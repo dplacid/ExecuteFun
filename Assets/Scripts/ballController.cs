@@ -7,10 +7,11 @@ using System;
 public class ballController : MonoBehaviour {
 	private Text hud;
 	//private int score = 0;
+	private RawImage starRenderer;
 
 	// Use this for initialization
 	void Start () {
-		hud = GameObject.FindWithTag("points").GetComponent<Text>();;
+		hud = GameObject.FindWithTag("points").GetComponent<Text>();
 	}
 
 	void OnCollisionEnter(Collision col){
@@ -33,7 +34,6 @@ public class ballController : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update () {	
 	}
 }
