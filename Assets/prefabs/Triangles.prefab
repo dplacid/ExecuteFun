@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33630122575833078}
   - component: {fileID: 23800368105246450}
   - component: {fileID: 114930952401758750}
+  - component: {fileID: 65127291687854948}
   m_Layer: 0
   m_Name: cone (2)
   m_TagString: Cone
@@ -56,9 +57,10 @@ GameObject:
   - component: {fileID: 33276081916848142}
   - component: {fileID: 23734760523243966}
   - component: {fileID: 114033650246130804}
+  - component: {fileID: 65855300052685902}
   m_Layer: 0
   m_Name: cone (6)
-  m_TagString: Untagged
+  m_TagString: Cone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,6 +76,7 @@ GameObject:
   - component: {fileID: 33461247716777572}
   - component: {fileID: 23643907810155112}
   - component: {fileID: 114563794137172862}
+  - component: {fileID: 65861610314888848}
   m_Layer: 0
   m_Name: cone (3)
   m_TagString: Cone
@@ -92,9 +95,10 @@ GameObject:
   - component: {fileID: 33001251678427492}
   - component: {fileID: 23042855158062014}
   - component: {fileID: 114322700741197984}
+  - component: {fileID: 65589917023303140}
   m_Layer: 0
   m_Name: cone (5)
-  m_TagString: Untagged
+  m_TagString: Cone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,6 +114,7 @@ GameObject:
   - component: {fileID: 33648110048309640}
   - component: {fileID: 23109366430747516}
   - component: {fileID: 114728763990334844}
+  - component: {fileID: 65488339118563550}
   m_Layer: 0
   m_Name: cone (1)
   m_TagString: Cone
@@ -128,9 +133,10 @@ GameObject:
   - component: {fileID: 33234198661870526}
   - component: {fileID: 23148786854540776}
   - component: {fileID: 114511307481820638}
+  - component: {fileID: 65741860516713938}
   m_Layer: 0
   m_Name: cone (7)
-  m_TagString: Untagged
+  m_TagString: Cone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,7 +152,7 @@ GameObject:
   - component: {fileID: 33445777357587686}
   - component: {fileID: 23734507192144674}
   - component: {fileID: 114365262943065592}
-  - component: {fileID: 64130671200242016}
+  - component: {fileID: 65454857114893040}
   m_Layer: 0
   m_Name: cone
   m_TagString: Cone
@@ -165,9 +171,10 @@ GameObject:
   - component: {fileID: 33089434755900136}
   - component: {fileID: 23014592293553490}
   - component: {fileID: 114085215455682226}
+  - component: {fileID: 65957657361072272}
   m_Layer: 0
   m_Name: cone (4)
-  m_TagString: Untagged
+  m_TagString: Cone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -633,8 +640,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1498365211667110}
   m_Mesh: {fileID: 4300000, guid: 1dd8df1d57bcc40a88fdf51da3909f88, type: 3}
---- !u!64 &64130671200242016
-MeshCollider:
+--- !u!65 &65127291687854948
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154724386606806}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999996, z: 0.019999996}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65454857114893040
+BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -642,11 +661,81 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 1dd8df1d57bcc40a88fdf51da3909f88, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999996, z: 0.019999996}
+  m_Center: {x: 0, y: 0, z: 0.0000000037252903}
+--- !u!65 &65488339118563550
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1498365211667110}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999996, z: 0.019999996}
+  m_Center: {x: 0.000000014901161, y: 2.3283064e-10, z: 0.000000007450581}
+--- !u!65 &65589917023303140
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1471231025735648}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999996, z: 0.019999996}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65741860516713938
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1610543073809204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999996, z: 0.019999996}
+  m_Center: {x: -0.0000000037252903, y: 0, z: -0.000000007450581}
+--- !u!65 &65855300052685902
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1412848594464694}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999996, z: 0.019999996}
+  m_Center: {x: -0.0000000037252903, y: -0.000000014901161, z: 0}
+--- !u!65 &65861610314888848
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1446058911372366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999996, z: 0.019999996}
+  m_Center: {x: -0.0000000037252903, y: 0, z: -0.000000007450581}
+--- !u!65 &65957657361072272
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1759361276291250}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.019999996, z: 0.019999996}
+  m_Center: {x: 0.000000014901161, y: 0, z: 0}
 --- !u!114 &114033650246130804
 MonoBehaviour:
   m_ObjectHideFlags: 1

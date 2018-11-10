@@ -43,7 +43,7 @@ public class ballShooterScript : MonoBehaviour {
         shot.gameObject.GetComponent<Renderer>().material.SetColor("_Color",colors[color]);
 
         // shot.GetComponent<Renderer>().SetColor("_Color", Button.gameObject.GetComponent<UnityEngine.UI.Image>().color);
-        shot.AddForce(-ball.transform.up * 1000f);
+        shot.AddForce(ball.transform.forward * 1000f);
         color = Random.Range(0, 4);
         fireButton.gameObject.GetComponent<UnityEngine.UI.Image>().color = colors[color];
     }
