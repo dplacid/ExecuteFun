@@ -22,10 +22,10 @@ public class ballController : MonoBehaviour {
 					Debug.Log("hit");
 					string hudText = hud.text;
 					string[] splitHud = hudText.Split(' ');
-					int score = Int32.Parse(splitHud[1]);
+					int score = Int32.Parse(splitHud[0]);
 					score+=1;
 					Debug.Log(score);
-					hud.text = "Points: " + score;
+					hud.text = score + " ";
 					Destroy(col.gameObject);
 				}
 				

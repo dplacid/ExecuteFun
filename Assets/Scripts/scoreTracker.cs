@@ -18,7 +18,8 @@ public class scoreTracker : MonoBehaviour {
 	void Update () {
 		string hudText = points.text;
 		string[] splitHud = hudText.Split(' ');
-		int score = Int32.Parse(splitHud[1]);
+		Debug.Log(splitHud[0]);
+		int score = Int32.Parse(splitHud[0]);
 		if(score > currentScore){
 			StartCoroutine(flash());
 			currentScore = score;
